@@ -102,17 +102,18 @@ header nav a:hover{
     border-radius: .6rem;
 }
 .item-img-wrapper img{
-   object-fit: cover;
-   width: 100%;
+    object-fit: cover;
+    width: 100%;
     height: 100%;
     border-radius: .6rem;
     opacity: .8;
+    transform: scale(.9);
     transition: opacity  .3s;
 }
 
 .item:hover .item-img-wrapper img{
     opacity: .3;
-    transform: scale(1.17);
+    transform: scale(1);
     transition: .5s;
 }
 .item-info{
@@ -147,7 +148,7 @@ header nav a:hover{
     background: linear-gradient(to right, #a044ff, #6a3093); 
     font-size: 1.rem;
     color: rgba(241, 234, 234, 0.589);
-    border-radius: .5rem;
+    border-radius: .2rem;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
     cursor: pointer;
@@ -158,7 +159,9 @@ header nav a:hover{
     opacity: 1;
     visibility: visible;
 }
-
+.btn-info:hover{
+    background: rgba(95, 93, 93, 0.6);
+}
 
 /*footer*/
 
@@ -193,5 +196,5 @@ footer{
     color: #6a3093;  
     color: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
     color: linear-gradient(to right, #a044ff, #6a3093); 
-    transition: 1s;
+    transition: .5s;
 }
